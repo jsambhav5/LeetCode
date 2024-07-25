@@ -5,3 +5,6 @@
 *.exe
 *.class
 *tempCodeRunnerFile.cpp
+*tempCodeRunnerFile.java
+*tempCodeRunnerFile
+.gitignore

@@ -17,8 +17,12 @@ int lengthOfLongestSubstring(string s) {
 }
 
 int main(int argc, const char** argv) {
-	// string s = "tmmzuxt";
-	string s = "abcabcbb";
-	cout << lengthOfLongestSubstring(s);
+	int T;
+	cin >> T;
+	for (int i = 0; i < T; i++) {
+		string s;
+		cin >> s;
+		cout << lengthOfLongestSubstring(s) << endl;
+	}
 	return 0;
 }
