@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class MedianOfTwoSortedArrays {
 	public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
 		int size1 = nums1.length;
@@ -42,8 +44,24 @@ public class MedianOfTwoSortedArrays {
 	}
 
 	public static void main(String[] args) {
-		int[] nums1 = { 1, 3 };
-		int[] nums2 = { 2 };
+		int size1, size2;
+
+		Scanner sc = new Scanner(System.in);
+		size1 = sc.nextInt();
+		size2 = sc.nextInt();
+
+		int[] nums1 = new int[size1];
+		int[] nums2 = new int[size2];
+
+		for (int i = 0; i < size1; i++) {
+			nums1[i] = sc.nextInt();
+		}
+
+		for (int i = 0; i < size2; i++) {
+			nums2[i] = sc.nextInt();
+		}
+		sc.close();
+
 		double median = findMedianSortedArrays(nums1, nums2);
 		System.out.println(median);
 	}
