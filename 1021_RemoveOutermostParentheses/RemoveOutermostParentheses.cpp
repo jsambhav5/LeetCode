@@ -1,31 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// Using Stack
-// class Solution {
-// public:
-// 	string removeOuterParentheses(string& s) {
-// 		if (s == "") return s;
-// 		string res = "";
-// 		stack<char> st;
-// 		int start = 0;
-// 		for (int i = 0; i < s.length(); i++) {
-// 			if (!st.empty()) {
-// 				if (st.top() == '(' && s[i] == ')')
-// 					st.pop();
-// 				else
-// 					st.push(s[i]);
-// 			}
-// 			if (st.empty() && start != i && s[start] == '(' && s[start + 1] == '(' && s[i - 1] == ')' && s[i] == ')') {
-// 				st.push('(');
-// 				res += s.substr(start + 1, i - start - 1);
-// 				start = ++i;
-// 			}
-// 		}
-// 		return res;
-// 	}
-// };
-
 class Solution {
 public:
 	string removeOuterParentheses(string s) {
