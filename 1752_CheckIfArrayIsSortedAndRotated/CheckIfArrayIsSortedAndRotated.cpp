@@ -1,3 +1,14 @@
+// LeetCode : 1752 - NAME (https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/)
+// TUF : Check if the array is sorted (https://takeuforward.org/data-structure/check-if-an-array-is-sorted/)
+
+/*
+Approach:
+If array is roated, a[i] > a[i + 1] can happen once otherwise it cannot happen
+
+TC: O(N)
+SC: O(1)
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -20,3 +31,48 @@ public:
 		return false;
 	}
 };
+
+int main(int argc, const char** argv) {
+	int t;
+	cin >> t;
+
+	while (t--) {
+		int n;
+		cin >> n;
+
+		vector<int> arr;
+
+		for (int i = 0; i < n; i++) {
+			int input;
+			cin >> input;
+			arr.push_back(input);
+		}
+
+		Solution sol;
+
+		bool res = sol.check(arr);
+
+		cout << res << endl;
+	}
+
+	return 0;
+}
+
+/*
+Test Input :
+3
+
+5
+3 4 5 1 2
+
+4
+2 1 3 4
+
+3
+1 2 3
+
+Test Output : 1
+1
+0
+1
+*/

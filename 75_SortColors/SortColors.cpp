@@ -1,3 +1,17 @@
+// LeetCode : 75 - Sort Colors (https://leetcode.com/problems/sort-colors/description/)
+// TUF+ : Sort an array of 0's 1's and 2's (https://takeuforward.org/plus/dsa/arrays/faqs-medium/sort-an-array-of-0's-1's-and-2's)
+
+/*
+Approach:
+Used 3-Pointers to solve this
+
+TC: O(N)
+SC: O(1)
+*/
+
+#include <bits/stdc++.h>
+using namespace std;
+
 class Solution {
 public:
 	void sortColors(vector<int>& nums) {
@@ -18,3 +32,53 @@ public:
 		}
 	}
 };
+
+int main(int argc, const char** argv) {
+	int t;
+	cin >> t;
+
+	while (t--) {
+		int n;
+		cin >> n;
+
+		vector<int> arr;
+
+		for (int i = 0; i < n; i++) {
+			int input;
+			cin >> input;
+			arr.push_back(input);
+		}
+
+		Solution sol;
+
+		sol.sortColors(arr);
+
+		for (auto i : arr) {
+			cout << i << " ";
+		}
+
+		cout << endl;
+	}
+
+	return 0;
+}
+
+/*
+Test Input :
+3
+
+5
+1 0 2 1 0
+
+5
+0 0 1 1 1
+
+5
+1 1 2 2 1
+
+Test Output : 1
+0 0 1 1 2
+0 0 1 1 1
+1 1 1 2 2
+
+*/

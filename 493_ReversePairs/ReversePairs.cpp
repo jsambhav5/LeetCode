@@ -80,7 +80,7 @@ private:
 	}
 };
 
-int main() {
+int main(int argc, const char** argv) {
 	int t;
 	cin >> t;
 
@@ -107,11 +107,11 @@ int main() {
 }
 
 /*
-Test Input : 
+Test Input :
 4
 5
 6 4 1 2 7
-5 
+5
 5 4 4 3 3
 5
 2 4 3 5 1
@@ -124,4 +124,4 @@ Test Output : 1
 3
 2
 
-*/ 
+*/
