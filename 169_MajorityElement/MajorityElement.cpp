@@ -57,9 +57,20 @@ int main(int argc, const char** argv) {
 
 /*
 Test Input :
-INPUT
+3
+
+9
+7 0 0 1 7 7 2 7 7
+
+6
+1 1 1 2 1 2
+
+4
+-1 -1 -1 -1
 
 Test Output : 1
-OUTPUT
+7
+1
+-1
 
 */
