@@ -1,6 +1,20 @@
+// LeetCode : 229 - Majority Element II (https://leetcode.com/problems/majority-element-ii/description/)
+// TUF+ : Majority Element-II (https://takeuforward.org/plus/dsa/arrays/faqs-hard/majority-element-ii)
+
+/*
+Approach:
+Used modified Moore's Voting Algorithm to solve this
+
+TC: O(N)
+SC: O(1)
+*/
+
+#include <bits/stdc++.h>
+using namespace std;
+
 class Solution {
 public:
-	vector<int> majorityElementTwo(vector<int>& nums) {
+	vector<int> majorityElement(vector<int>& nums) {
 		int n = nums.size();
 
 		int num1 = INT_MIN;
@@ -50,3 +64,53 @@ public:
 		return ans;
 	}
 };
+
+int main(int argc, const char** argv) {
+	int t;
+	cin >> t;
+
+	while (t--) {
+		int n;
+		cin >> n;
+
+		vector<int> arr;
+
+		for (int i = 0; i < n; i++) {
+			int input;
+			cin >> input;
+			arr.push_back(input);
+		}
+
+		Solution sol;
+
+		vector<int> res = sol.majorityElement(arr);
+
+		for (auto i : res) {
+			cout << i << " ";
+		}
+
+		cout << endl;
+	}
+
+	return 0;
+}
+
+/*
+Test Input :
+3
+
+6
+1 2 1 1 3 2
+
+7
+1 2 1 1 3 2 2
+
+8
+1 2 1 1 3 2 2 3
+
+Test Output : 1
+1
+1 2
+1 2
+
+*/
