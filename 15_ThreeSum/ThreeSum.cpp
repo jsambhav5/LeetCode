@@ -65,16 +65,16 @@ int main(int argc, const char** argv) {
 
 		Solution sol;
 
-		vector<vector<int>> res = sol.threeSum(arr);
+		vector<vector<int>> ans = sol.threeSum(arr);
 
-		for (auto i : res) {
-			for (auto j : i) {
-				cout << j << " ";
-			}
-			cout << endl;
+		cout << "[ ";
+		for (auto vec : ans) {
+			cout << "[";
+			for (auto ele : vec)
+				cout << ele << " ";
+			cout << "] ";
 		}
-
-		cout << endl;
+		cout << "]" << endl;
 	}
 
 	return 0;
@@ -82,7 +82,7 @@ int main(int argc, const char** argv) {
 
 /*
 Test Input :
-2
+3
 
 6
 2 -2 0 3 -3 5
@@ -90,12 +90,12 @@ Test Input :
 5
 2 -1 -1 3 -1
 
+4
+8 -6 5 4
+
 Test Output : 1
--3 -2 5
--3 0 3
--2 0 2
-
--1 -1 2
-
+[ [-3 -2 5 ] [-3 0 3 ] [-2 0 2 ] ]
+[ [-1 -1 2 ] ]
+[ ]
 
 */
