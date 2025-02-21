@@ -1,4 +1,4 @@
-// LeetCode : 18 : 4Sum (https://leetcode.com/problems/4sum/description/)
+// LeetCode : 18 - 4Sum (https://leetcode.com/problems/4sum/description/)
 // TUF+ : 4 Sum (https://takeuforward.org/plus/dsa/arrays/faqs-medium/4-sum)
 
 /*
