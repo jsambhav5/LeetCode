@@ -9,6 +9,7 @@ Instead of checking for every divisor from 1 to max of array, we can just check 
 where min starts with 1 and max starts with bananas in biggest pile
 if possible solution exists, then ans is in left half else ans is in right half
 
+Complexiy Analysis:
 TC: O(log(max)*N)
 SC: O(1)
 */
