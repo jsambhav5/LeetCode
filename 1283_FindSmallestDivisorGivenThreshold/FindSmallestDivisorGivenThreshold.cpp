@@ -4,7 +4,7 @@
 /*
 Topics and Learnings: Binary Search
 
-Approach:Binary Search On Answers
+Approach: Binary Search On Answers
 Instead of checking for every divisor from 1 to max of array, we can just check for (min + max) / 2
 where min starts with 1 and max starts with bananas in biggest pile
 if possible solution exists, then ans is in left half else ans is in right half
