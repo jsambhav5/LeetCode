@@ -1,3 +1,19 @@
+// LeetCode : 410 - Split Array Largest Sum (https://leetcode.com/problems/split-array-largest-sum)
+// TUF+ : Split array - largest sum (https://takeuforward.org/plus/dsa/binary-search/faqs/split-array---largest-sum)
+
+/*
+Topics and Learnings: Binary Search
+
+Approach:
+Used Binary search to solve this with range : [largest element, sum of all elements]
+
+TC: O(N * (log(sum - max) + 1))
+SC: O(1)
+*/
+
+#include <bits/stdc++.h>
+using namespace std;
+
 class Solution {
 private:
 	bool possible(vector<int>& nums, int k, int mid) {
@@ -30,3 +46,58 @@ public:
 		return res;
 	}
 };
+
+int main(int argc, const char** argv) {
+	int t;
+	cin >> t;
+
+	while (t--) {
+		int n;
+		cin >> n;
+
+		vector<int> arr;
+		for (int i = 0; i < n; i++) {
+			int input;
+			cin >> input;
+			arr.push_back(input);
+		}
+
+		int k;
+		cin >> k;
+
+		Solution sol;
+
+		int ans = sol.splitArray(arr, k);
+		cout << ans << endl;
+	}
+
+	return 0;
+}
+
+/*
+Test Input :
+4
+
+5
+7 2 5 10 8
+2
+
+5
+1 2 3 4 5
+2
+
+5
+1 2 3 4 5
+3
+
+3
+3 5 1
+3
+
+Test Output : 1
+18
+9
+6
+5
+
+*/
