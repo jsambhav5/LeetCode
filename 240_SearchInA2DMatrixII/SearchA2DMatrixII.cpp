@@ -1,15 +1,17 @@
-// LeetCode : 74 - Search a 2D Matrix (https://leetcode.com/problems/search-a-2d-matrix/description/)
-// TUF+ : Search in a 2D Matrix (https://takeuforward.org/plus/dsa/binary-search/2d-arrays/search-in-a-2d-matrix)
+// LeetCode : 240 - Search a 2D Matrix II (https://leetcode.com/problems/search-a-2d-matrix-ii/description/)
+// TUF+ : Search in 2D matrix - II (https://takeuforward.org/plus/dsa/binary-search/2d-arrays/search-in-2d-matrix-ii)
 
 /*
 Topics and Learnings: Binary Search
 
 Approach:
-Since Matrix is sorted, used Binary search to search in the matrix
+Started with the upper right corner
+if element == target, return true
+if element > target, col--
+else row++
 
 Complexiy Analysis:
-Complexiy Analysis:
-TC: O(log(m * n))
+TC: O(m + n))
 SC: O(1)
 */
 
@@ -21,15 +23,13 @@ public:
 	bool searchMatrix(vector<vector<int>>& matrix, int target) {
 		int n = matrix.size();
 		int m = matrix[0].size();
-		int low = 0, high = (n * m) - 1;
 
-		while (low <= high) {
-			int mid = (low + high) / 2;
-			int ele = matrix[mid / m][mid % m];
+		int row = 0, col = m - 1;
 
-			if (ele == target) return true;
-			if (ele < target) low = mid + 1;
-			else high = mid - 1;
+		while (row < n && col >= 0) {
+			if (matrix[row][col] == target) return true;
+			if (matrix[row][col] > target) col--;
+			else row++;
 		}
 
 		return false;

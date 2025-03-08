@@ -5,6 +5,7 @@
 Approach:
 Used Bitwise XOR to solve this
 
+Complexiy Analysis:
 TC: O(N)
 SC: O(1)
 */
@@ -26,10 +27,10 @@ public:
 	int missingNumber2(vector<int>& nums) {
 		int n = nums.size();
 		int sum = 0;
-		for(int i = 0; i < n; i++) {
-		    sum += nums[i];
+		for (int i = 0; i < n; i++) {
+			sum += nums[i];
 		}
-		return ((n * (n + 1)) / 2) - sum ;
+		return ((n * (n + 1)) / 2) - sum;
 	}
 };
 

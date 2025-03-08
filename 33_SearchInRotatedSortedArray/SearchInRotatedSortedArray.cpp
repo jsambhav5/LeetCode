@@ -11,6 +11,7 @@ else right half is sorted
 if number is present in sorted half => eleminate unsorted
 else => eleminate sorted
 
+Complexiy Analysis:
 TC: O(logN)
 SC: O(1)
 */

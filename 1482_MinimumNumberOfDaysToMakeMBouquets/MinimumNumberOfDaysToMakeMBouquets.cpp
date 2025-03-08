@@ -9,6 +9,7 @@ Instead of checking for every no. of days, we can just check for (min + max) / 2
 if it is possible, then ans is in left half else ans is in right half
 
 Complexiy Analysis:
+Complexiy Analysis:
 TC: O(log(max-min+1) * N)
 SC: O(1)
 */
