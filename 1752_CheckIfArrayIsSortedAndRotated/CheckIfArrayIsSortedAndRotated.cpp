@@ -2,6 +2,8 @@
 // TUF : Check if the array is sorted (https://takeuforward.org/data-structure/check-if-an-array-is-sorted/)
 
 /*
+Topics and Learnings:
+
 Approach:
 If array is roated, a[i] > a[i + 1] can happen once otherwise it cannot happen
 

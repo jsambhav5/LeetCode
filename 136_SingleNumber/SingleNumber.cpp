@@ -2,6 +2,8 @@
 // TUF+ : Single Number - I ( https://takeuforward.org/plus/dsa/bit-manipulation/problems/single-number---i )
 
 /*
+Topics and Learnings:
+
 Approach:
 Used XOR bitwise operation to solve this
 

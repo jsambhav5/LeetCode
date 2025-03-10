@@ -2,6 +2,8 @@
 // TUF+ : Pascal's Triangle (https://takeuforward.org/plus/dsa/arrays/faqs-medium/pascal's-triangle)
 
 /*
+Topics and Learnings:
+
 Approach:
 pascal[i][j] = pascal[i - 1][j] + pascal[i - 1][j - 1]
 

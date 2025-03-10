@@ -2,6 +2,8 @@
 // TUF+ : Best time to buy and sell stock (https://takeuforward.org/plus/dsa/dynamic-programming/dp-on-stocks/best-time-to-buy-and-sell-stock)
 
 /*
+Topics and Learnings:
+
 Approach:
 Used Linear Traversal to solve this
 

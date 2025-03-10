@@ -2,6 +2,8 @@
 // TUF+ : Majority Element-I (https://takeuforward.org/plus/dsa/arrays/faqs-hard/majority-element-i)
 
 /*
+Topics and Learnings:
+
 Approach:
 Used Moore's Voting Algorithm to solve this
 
