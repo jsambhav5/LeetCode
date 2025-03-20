@@ -1,5 +1,16 @@
-// LeetCode : 439 - Reverse Pairs (https://leetcode.com/problems/reverse-pairs)
-// TUF+ : Reverse Pairs (https://takeuforward.org/plus/data-structures-and-algorithm/arrays/faqs-hard/reverse-pairs)
+// LeetCode : 493 - Reverse Pairs (https://leetcode.com/problems/reverse-pairs)
+// TUF+ : Reverse Pairs (https://takeuforward.org/plus/dsa/arrays/faqs-hard/reverse-pairs)
+
+/*
+Topics and Learnings: Merge Sort, Array
+
+Approach:
+Used Merge Sort to solve this
+
+Complexiy Analysis:
+TC: O(N * logN)
+SC: O(N)
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
