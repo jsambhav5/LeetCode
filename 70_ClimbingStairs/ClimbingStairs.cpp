@@ -1,4 +1,4 @@
-// LeetCode : 70- Climbing Stairs (https://leetcode.com/problems/climbing-stairs)
+// LeetCode : 70 - Climbing Stairs (https://leetcode.com/problems/climbing-stairs)
 // TUF+ : Climbing stairs (https://takeuforward.org/plus/dsa/dynamic-programming/1d-dp/climbing-stairs)
 
 /*
