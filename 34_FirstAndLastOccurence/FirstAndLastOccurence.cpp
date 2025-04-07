@@ -9,7 +9,7 @@ Used Binary Search to solve this
 First Occurrence = Lower Bound
 Last Occurrence = Upper Bound - 1
 
-Complexiy Analysis:
+Complexity Analysis:
 TC: O(logN)
 SC: O(1)
 */

@@ -7,7 +7,7 @@ Topics and Learnings: Arrays, Kadane's Algorithm
 Approach:
 Ran loop from left to right and right to left to calculate the consecutive product and stored maximum product so far in a variable. Also, later solved it with a modified version of Kadane's Algorithm as well
 
-Complexiy Analysis:
+Complexity Analysis:
 TC: O(N)
 SC: O(1)
 */

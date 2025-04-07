@@ -7,8 +7,8 @@ Topics and Learnings: Binary Search
 Approach:
 Since Matrix is sorted, used Binary search to search in the matrix
 
-Complexiy Analysis:
-Complexiy Analysis:
+Complexity Analysis:
+Complexity Analysis:
 TC: O(log(m * n))
 SC: O(1)
 */

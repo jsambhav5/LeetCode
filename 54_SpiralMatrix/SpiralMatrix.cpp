@@ -7,7 +7,7 @@ Topics and Learnings:
 Approach:
 Used four separate loops to print the array elements in spiral
 
-Complexiy Analysis:
+Complexity Analysis:
 TC: O(M * N)
 SC: O(1)
 */

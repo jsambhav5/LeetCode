@@ -7,7 +7,7 @@ Topics and Learnings:
 Approach:
 Used 3-Pointers to solve this
 
-Complexiy Analysis:
+Complexity Analysis:
 TC: O(N)
 SC: O(1)
 */

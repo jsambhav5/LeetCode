@@ -7,7 +7,7 @@ Topics and Learnings:
 Approach:
 If array is roated, a[i] > a[i + 1] can happen once otherwise it cannot happen
 
-Complexiy Analysis:
+Complexity Analysis:
 TC: O(N)
 SC: O(1)
 */

@@ -9,8 +9,8 @@ Instead of checking for every no. of banas per hour, we can just check for (min 
 where min starts with 1 and max starts with bananas in biggest pile
 if possible solution exists, then ans is in left half else ans is in right half
 
-Complexiy Analysis:
-Complexiy Analysis:
+Complexity Analysis:
+Complexity Analysis:
 TC: O(N * log(max))
 SC: O(1)
 */

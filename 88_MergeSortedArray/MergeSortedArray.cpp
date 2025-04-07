@@ -6,7 +6,7 @@ Topics and Learnings: Array
 Approach:
 Used parallel traversal to solve this
 
-Complexiy Analysis:
+Complexity Analysis:
 TC: O(N+M)
 SC: O(N+M)
 */

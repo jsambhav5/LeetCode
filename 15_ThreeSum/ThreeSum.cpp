@@ -8,7 +8,7 @@ Approach:
 1. Sort the array
 2. Use 3 pointers to find the required pair
 
-Complexiy Analysis:
+Complexity Analysis:
 TC: O(N^2)
 SC: O(N^2)
 */

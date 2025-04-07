@@ -7,7 +7,7 @@ Topics and Learnings: Merge Sort, Array
 Approach:
 Used Merge Sort to solve this
 
-Complexiy Analysis:
+Complexity Analysis:
 TC: O(N * logN)
 SC: O(N)
 */

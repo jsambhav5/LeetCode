@@ -11,8 +11,8 @@ else right half is sorted
 if left half is sorted => ans = min(ans, nums[low])
 else => ans = min(ans, nums[mid])
 
-Complexiy Analysis:
-Complexiy Analysis:
+Complexity Analysis:
+Complexity Analysis:
 TC: O(logN)
 SC: O(1)
 */

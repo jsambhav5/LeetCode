@@ -14,7 +14,7 @@ Topics and Learnings:
 Approach:
 Clockwise Rotate by 90 = Transpose => Mirror by Y-axis
 
-Complexiy Analysis:
+Complexity Analysis:
 TC: O(N ^ 2)
 SC: O(N ^ 2)
 */

@@ -6,7 +6,7 @@ Topics and Learnings: String, Linear Traversal
 Approach:
 Used Linear Traversal to solve this
 
-Complexiy Analysis:
+Complexity Analysis:
 TC: O(N)
 SC: O(N)
 */

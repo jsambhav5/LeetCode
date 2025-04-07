@@ -7,7 +7,7 @@ Topics and Learnings:
 Approach:
 pascal[i][j] = pascal[i - 1][j] + pascal[i - 1][j - 1]
 
-Complexiy Analysis:
+Complexity Analysis:
 TC: O(N ^ 2)
 SC: O(1)
 */

@@ -10,7 +10,7 @@ if element == target, return true
 if element > target, col--
 else row++
 
-Complexiy Analysis:
+Complexity Analysis:
 TC: O(m + n))
 SC: O(1)
 */

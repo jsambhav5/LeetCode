@@ -7,7 +7,7 @@ Topics and Learnings: Dynamic Programming
 Approach:
 Used Dynamic Programming to solve this
 
-Complexiy Analysis:
+Complexity Analysis:
 TC: O(N)
 SC: O(1)
 */
