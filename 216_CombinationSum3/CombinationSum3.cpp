@@ -1,5 +1,5 @@
-// LeetCode : 40 - Combination Sum II (https://leetcode.com/problems/combination-sum-ii/)
-// TUF+ : Combination Sum II (https://takeuforward.org/plus/dsa/problems/combination-sum-ii)
+// LeetCode : 40 - Combination Sum III (https://leetcode.com/problems/combination-sum-iii/)
+// TUF+ : Combination Sum III (https://takeuforward.org/plus/dsa/problems/combination-sum-iii)
 
 /*
 Topics and Learnings: Recursion
@@ -8,8 +8,8 @@ Approach:
 Used Recursion to solve this
 
 Complexity Analysis:
-TC: O(N * 2^N)
-SC: O(N)
+TC: O(2^9 * K)
+SC: O(K)
 */
 
 #include <bits/stdc++.h>
@@ -17,34 +17,28 @@ using namespace std;
 
 class Solution {
 private:
-	void func(int ind, int sum, vector<int>& nums,
-		vector<int>& candidates, vector<vector<int>>& ans) {
-		if (sum == 0) {
+	void func(int sum, int last, vector<int>& nums, int k, vector<vector<int>>& ans) {
+		if (sum == 0 && nums.size() == k) {
 			ans.push_back(nums);
 			return;
 		}
 
-		if (sum < 0 || ind == candidates.size()) return;
+		if (sum <= 0 || nums.size() > k) return;
 
-		nums.push_back(candidates[ind]);
-
-		func(ind + 1, sum - candidates[ind], nums, candidates, ans);
-		nums.pop_back();
-
-		for (int i = ind + 1; i < candidates.size(); i++) {
-			if (candidates[i] != candidates[ind]) {
-				func(i, sum, nums, candidates, ans);
-				break;
+		for (int i = last; i <= 9; i++) {
+			if (i <= sum) {
+				nums.push_back(i);
+				func(sum - i, i + 1, nums, k, ans);
+				nums.pop_back();
 			}
+			else break;
 		}
 	}
-
 public:
-	vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
+	vector<vector<int>> combinationSum3(int k, int n) {
 		vector<vector<int>> ans;
 		vector<int> nums;
-		sort(candidates.begin(), candidates.end());
-		func(0, target, nums, candidates, ans);
+		func(n, 1, nums, k, ans);
 		return ans;
 	}
 };
@@ -54,19 +48,11 @@ int main(int argc, const char** argv) {
 	cin >> t;
 
 	while (t--) {
-		int n, target;
-		cin >> n >> target;
-
-		vector<int> candidates;
-
-		for (int i = 0; i < n; i++) {
-			int input;
-			cin >> input;
-			candidates.push_back(input);
-		}
+		int k, n;
+		cin >> k >> n;
 
 		Solution sol;
-		vector<vector<int>> res = sol.combinationSum2(candidates, target);
+		vector<vector<int>> res = sol.combinationSum3(k, n);
 
 		for (auto i : res) {
 			for (auto j : i) {
@@ -84,27 +70,18 @@ int main(int argc, const char** argv) {
 Test Input :
 3
 
-7 8
-10 1 2 7 6 1 5
-
-5 5
-2 5 2 1 2
-
-7 8
-2 1 2 7 6 1 5
+3 7
+3 9
+3 8
 
 Test Output : 1
-1 1 6
-1 2 5
-1 7
-2 6
+1 2 4
 
-1 2 2
-5
+1 2 6
+1 3 5
+2 3 4
 
-1 1 6
 1 2 5
-1 7
-2 6
+1 3 4
 
 */
