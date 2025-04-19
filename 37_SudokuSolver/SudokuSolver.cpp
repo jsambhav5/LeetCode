@@ -1,5 +1,5 @@
-// LeetCode : 37 - Sudoko Solver (https://leetcode.com/problems/sudoku-solver/description/)
-// TUF+ : Sudoko Solver (https://takeuforward.org/plus/dsa/problems/sudoko-solver)
+// LeetCode : 37 - Sudoku Solver (https://leetcode.com/problems/sudoku-solver/description/)
+// TUF+ : Sudoku Solver (https://takeuforward.org/plus/dsa/problems/sudoko-solver)
 
 /*
 Topics and Learnings: Recursion
