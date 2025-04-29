@@ -2,14 +2,14 @@
 // TUF+ : Longest happy prefix (https://takeuforward.org/plus/dsa/strings--advanced-algo/advanced-problems-(less-asked)/longest-happy-prefix)
 
 /*
-Topics and Learnings: String
+Topics and Learnings: String, KMP Algorithm
 
 Approach:
-APPROACH
+Used Knuth–Morris–Pratt algorithm to solve this
 
 Complexity Analysis:
-TC: O()
-SC: O()
+TC: O(N)
+SC: O(N)
 */
 
 #include <bits/stdc++.h>
