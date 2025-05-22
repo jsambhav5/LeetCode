@@ -6,7 +6,7 @@ public:
         dfs(0, s, path, res);
         return res;
     }
-
+ 
     void dfs(int index, string s, vector<string> &path, vector<vector<string>> &res) {
         if (index == s.size()) {
             res.push_back(path);
