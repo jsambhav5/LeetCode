@@ -1,4 +1,4 @@
-class Solution {
+class Solution { 
 private:
     int func(vector<int>& arr, int n) {
         vector<vector<int>> ahead(2, vector<int>(3, 0));
