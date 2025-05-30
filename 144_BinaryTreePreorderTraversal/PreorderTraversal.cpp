@@ -1,4 +1,4 @@
-class Solution {
+class Solution { 
 public:
 	vector<int> result;
 	vector<int> preorderTraversal(TreeNode* root) {
