@@ -1,4 +1,4 @@
-class Solution{
+class Solution{ 
 public:
     string shortestCommonSupersequence(string str1, string str2) {
         int n = str1.size();
