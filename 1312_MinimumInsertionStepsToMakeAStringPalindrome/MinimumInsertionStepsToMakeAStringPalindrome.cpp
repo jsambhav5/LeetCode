@@ -1,4 +1,4 @@
-class Solution{
+class Solution {
 private:
     int lcs(string s1, string s2) {
         int n = s1.size();
